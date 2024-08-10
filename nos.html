@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> competição agrinho </title>
+        <link rel="stylesheet" href="index.html">
+        <link rel="stylesheet" href="nos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+       
+    </head>
+    <body>
+
+
+
+<header class="header">
+    <a target=”_blank” href="index.html"><img class="voltar" src="icons/voltar.png"></a>
+
+    <div class="button">
+        <div class="bola"></div>
+    </div>
+
+    <script>
+        document.querySelector('.bola').addEventListener('click', (e)=>{
+        e.target.classList.toggle('bola-move');
+        document.body.classList.toggle('dark');
+    });
+    </script>
+</header>
+
+<body>
+
+    <h1>Sobre Nós:</h1>
+
+<!---personalização do botão-->
+    <div class="text-cta">
+      <button onclick="changeLanguage('eng')">
+       <a> Português </a>
+      </button>
+      <button onclick="changeLanguage('es')">
+      <a>  English </a>
+      </button>
+    </div>  
+
+<!---texto-->
+      <div class="texto-apresenta">
+        <div class="paragrafo1"> </div><br>
+    
+      <p id="siteContent">
+        Sobre nós: 
+        Nossa equipe é de Cascavel-PR, do colégio CEEP Pedro Boaretto Neto, do curso de Desenvolvimento de Sistemas.
+        Quando nos deparamos com o tema 'Agrinho: do campo à cidade, colhendo oportunidades', imediatamente pensamos qual seria a melhor forma de agrupar agronegócio e inovação tecnológica; em analogia a este contexto, surgiu a ideia de agricultura sustentável.
+        Com esse tema, foi mostrado propostas de como a produção pode ficar em comunhão com a natureza sem precisar prejudicar a fauna e a flora de nosso país.
+      </p>
+      
+      </div>
+      <script>
+      
+        function changeLanguage(lang) {
+          location.hash = lang;
+          location.reload();
+        }
+      
+        var language = {
+          eng: {
+            welcome: "Sobre nós: " +
+            "Nossa equipe é de Cascavel-PR, do colégio CEEP Pedro Boaretto Neto, do curso de Desenvolvimento de Sistemas." +
+            "Quando nos deparamos com o tema Agrinho: do campo à cidade, colhendo oportunidades , imediatamente pensamos qual seria a melhor forma de agrupar agronegócio e inovação tecnológica; em analogia a este contexto, surgiu a ideia de agricultura sustentável." +
+            "Com esse tema, foi mostrado propostas de como a produção pode ficar em comunhão com a natureza sem precisar prejudicar a fauna e a flora de nosso país."
+          },
+          es: {
+            welcome: "About us: " +
+            "Our team is from Cascavel-PR, from the CEEP Pedro Boaretto Neto school, on the Systems Development course." + 
+            "When we came across the theme 'Agrinho: from the countryside to the city', harvesting opportunities, We immediately thought about what would be the best way to group agribusiness and technological innovation; in analogy to this context, the idea of ​​sustainable agriculture emerged." +
+            "With this theme, proposals were shown on how production can be in communion with nature without having to harm the fauna and flora of our country."
+          }
+        };
+      
+        if (window.location.hash) {
+      
+          if (window.location.hash == "#es") {
+            siteContent.textContent =
+              language.es.welcome;
+          }
+        }
+      </script>
+
+
+</body>
+
+<footer>
+    <div class="finalizacao">
+        <ol>
+            <dd><strong>Nossos contatos:</strong></dd>
+            <hr>
+            <dd>ana.melo31@escola.pr.gov.br</dd>
+            <dd>lucas@escola.pr.gov.br</dd>
+            <dd>ceep@nrecascavel.com</dd>
+        </ol>
+        <ol>
+            <dd></strong>Nome dos Participantes:</strong></dd>
+            <hr>
+            <dd>Ana Luiza Lima de Melo</dd>
+            <dd>Lucas Mateus Dressler de Barros</dd>
+        </ol>
+        <ol>
+            <dd><a href="index.html">Página inicial</a></dd>
+            <br>
+            <dd><a href="https://www.sistemafaep.org.br/agrinho/">Site Agrinho</a></dd>
+        </ol>
+
+        <ol>
+            <a target=”_blank” href="https://github.com/search?q=agrinho&type=repositories&s=updated&o=desc"><img src="icons/git.png" width="50" height="50"></a>
+        </ol>
+    </div>
+    <br><br><br><br><br>
+</footer>
+
+
+
+</body>
+</html>

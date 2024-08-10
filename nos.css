@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  outline: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+background-color: rgb(20, 19, 19);
+}
+
+header{
+  background-color: rgb(53, 89, 53);
+  height: 50px;
+}
+
+
+.voltar{
+  margin-left: 30px;
+  margin-top: 5px;
+  height: 40px;
+}
+
+h1{
+  text-align: center;
+  margin-top: 120px;
+  font-family: Century Gothic;
+  color: #fff;
+  font-size: 60px;
+
+}
+
+
+.texto-apresenta{
+font-family: Century Gothic;
+color: #fff;
+height: 300px;
+width: -200px;
+text-align: center;
+font-size: 20px;
+margin-top: 300px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+
+
+/*modo escuro e claro*/
+.button{
+  margin-left: 1450px;
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 2.5px 0 #fff;
+  cursor: pointer;
+  background-color: rgb(204, 203, 173);
+  margin-top: -35px;
+}
+
+.bola{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgb(26, 62, 46);
+  transition: left 1s;
+}
+
+.bola-move{
+  left: calc(100% - 25px);
+
+}
+
+.dark{
+  background-color: rgb(209, 224, 228);
+
+  .header{
+      color: rgb(18, 30, 18);
+  }
+  .paragrafo1{
+      color: rgb(18, 30, 18);
+  }
+  .texto-apresenta{
+      color: rgb(18, 30, 18);
+  }
+
+  h1{
+    color: rgb(18, 30, 18);
+  }
+
+  footer{
+      background-color: rgb(18, 30, 18);
+  }
+
+}
+
+/*modo escuro e claro*/
+
+
+.text-cta{
+  margin-top: -230px;
+  margin-left: 1200px;
+}
+
+
+footer{
+  background-color: rgb(53, 89, 53);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  margin-top: 180px;
+}
+
+.finalizacao{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -200px;
+  font-size: 20px;
+}
